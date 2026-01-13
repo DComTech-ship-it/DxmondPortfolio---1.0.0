@@ -27,13 +27,25 @@ export default function ContactForm({ onClose }: { onClose: () => void }) {
     setIsSubmitting(true);
     
     try {
-      // Here you would typically send the form data to your API
-      // For now, we'll just simulate a successful submission
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const response = await fetch('https://formspree.io/f/YOUR_FORMSPREE_ID', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
+      });
       
-      toast.success('Message sent successfully!');
-      setFormData({ name: '', email: '', message: '' });
-      onClose();
+      if (response.ok) {
+        toast.success('Message sent successfully!');
+        setFormData({ name: '', email: '', message: '' });
+        onClose();
+      } else {
+        throw new Error('Failed to send message');
+      }
     } catch (error) {
       toast.error('Failed to send message. Please try again.');
       console.error('Error submitting form:', error);
@@ -59,7 +71,12 @@ export default function ContactForm({ onClose }: { onClose: () => void }) {
           </button>
         </div>
         
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form 
+          action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+          method="POST"
+          onSubmit={handleSubmit} 
+          className="space-y-4"
+        >
           <div>
             <label htmlFor="name" className="block text-sm font-medium mb-1">
               Name <span className="text-red-500">*</span>
