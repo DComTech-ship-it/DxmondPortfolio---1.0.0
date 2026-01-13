@@ -17,7 +17,7 @@ const BuyMeCoffee = () => {
         className="flex items-center"
       >
         <Coffee className="w-4 h-4 group-hover:rotate-12 transition-transform" />
-        <span>Buy me a coffee</span>
+        <span>Support my work</span>
       </a>
     </Button>
   );
