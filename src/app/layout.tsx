@@ -14,7 +14,7 @@ const siteUrl = 'https://dxmond-portfolio.vercel.app';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: 'Dxmond Deelyn Portfolio',
+  title: 'Dxmond Deelyn | Me',
   description: 'Dxmond Deelyn - Social Engineer & Web Developer Portfolio',
   icons: {
     icon: [
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: 'Dxmond Deelyn - Portfolio',
+    title: 'Dxmond Deelyn | Me',
     description: 'Social Engineer & Web Developer Portfolio',
     url: siteUrl,
     siteName: 'Dxmond Deelyn Portfolio',
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Dxmond Deelyn - Portfolio',
+    title: 'Dxmond Deelyn | Me',
     description: 'Social Engineer & Web Developer Portfolio',
     images: [`${siteUrl}/favicon/favicon.png`],
   },
