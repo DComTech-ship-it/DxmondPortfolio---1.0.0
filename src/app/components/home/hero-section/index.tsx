@@ -52,11 +52,12 @@ const HeroSection = () => {
                             </div>
                             <div className="flex flex-col gap-2 sm:gap-3 items-center text-center xs:items-start">
                                 <h1 className="flex items-center gap-2 text-2xl sm:text-3xl font-bold">
-                                    <img 
-                                        src="https://img.icons8.com/ios-filled/24/000000/source-code.png" 
+                                    <Image 
+                                        src="/images/icon/coder (2).png" 
                                         alt="Coder Icon" 
+                                        width={24}
+                                        height={24}
                                         className="w-6 h-6" 
-                                        loading="lazy" 
                                     />
                                     Dxmond Deelyn
                                 </h1>
