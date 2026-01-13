@@ -20,9 +20,9 @@ export const metadata: Metadata = {
   description: 'Dxmond Deelyn - Social Engineer & Web Developer Portfolio',
 
   icons: {
-    icon: [
-      { url: '/favicon.png', sizes: 'any' },
-    ],
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
   },
 
   openGraph: {
