@@ -5,6 +5,7 @@ import Experience from "./components/home/experience"
 import FeaturedWork from "./components/home/featured-work"
 import HeroSection from "./components/home/hero-section"
 import ProjectOverview from "./components/home/project-overview"
+import Skills from "./components/home/skills"
 
 const page = () => {
   return (
@@ -20,6 +21,8 @@ const page = () => {
       <Education/>
       <Divider/>
       <ProjectOverview/>
+      <Divider/>
+      <Skills/>
       <Divider/>
     </main>
   )
