@@ -1,12 +1,9 @@
-"use client";
-
 import type { Metadata } from 'next';
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/layout/header";
 import Footer from "./components/layout/footer";
-import { Toaster } from "sonner";
-import { ContactProvider } from "./context/contact-context";
+import ClientLayout from "./client-layout";
 
 const inter = Inter({
   variable: "--font-inter-sans",
@@ -17,16 +14,13 @@ const siteUrl = 'https://dxmond-portfolio.vercel.app';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-
   title: 'Dxmond Deelyn Portfolio',
   description: 'Dxmond Deelyn - Social Engineer & Web Developer Portfolio',
-
   icons: {
     icon: '/favicon.png',
     shortcut: '/favicon.png',
     apple: '/favicon.png',
   },
-
   openGraph: {
     title: 'Dxmond Deelyn - Portfolio',
     description: 'Social Engineer & Web Developer Portfolio',
@@ -42,7 +36,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-
   twitter: {
     card: 'summary_large_image',
     title: 'Dxmond Deelyn - Portfolio',
@@ -59,12 +52,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.variable}>
-        <ContactProvider>
+        <ClientLayout>
           <Header />
           <main>{children}</main>
           <Footer />
-          <Toaster position="top-center" richColors />
-        </ContactProvider>
+        </ClientLayout>
       </body>
     </html>
   );
