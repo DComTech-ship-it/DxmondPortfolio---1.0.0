@@ -40,7 +40,7 @@ export const metadata: Metadata = {
       },
       {
         rel: 'apple-touch-icon',
-        url: '/apple-touch-icon.png',
+        url: '/favicon_io (1)/apple-touch-icon.png',
       },
       {
         rel: 'manifest',
@@ -56,10 +56,10 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/og-image.png',
+        url: `${siteUrl}/og-image.png`,
         width: 1200,
         height: 630,
-        alt: 'Dxmond Deelyn Portfolio Preview',
+        alt: 'Dxmond Deelyn Portfolio',
       },
     ],
   },
@@ -67,7 +67,14 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Dxmond Deelyn - Portfolio',
     description: 'Social Engineer & Web Developer Portfolio',
-    images: ['/og-image.png'],
+    images: [`${siteUrl}/og-image.png`],
+  },
+  other: {
+    'og:image:secure_url': `${siteUrl}/og-image.png`,
+    'og:image:type': 'image/png',
+    'og:image:width': '1200',
+    'og:image:height': '630',
+    'og:image:alt': 'Dxmond Deelyn Portfolio Preview',
   },
 };
 
