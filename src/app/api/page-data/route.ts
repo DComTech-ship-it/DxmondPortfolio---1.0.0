@@ -35,7 +35,7 @@ const educationData = [
     },
     {
         date: "April 2022 - Sept 2024",
-        title: "WASSCE Certification - Gneneral Arts",
+        title: "WASSCE Certification - General Arts",
         subtitle: "Mawuli School, Ho - Ghana"
     },
     {
