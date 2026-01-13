@@ -52,14 +52,14 @@ export const metadata: Metadata = {
     title: 'Dxmond Deelyn | Me',
     description: 'Social Engineer & Web Developer',
     url: siteUrl,
-    siteName: 'Dxmond Deelyn Portfolio',
+    siteName: 'Dxmond Deelyn | Me',
     type: 'website',
     images: [
       {
         url: `${siteUrl}/favicon/favicon.png`,
         width: 192,
         height: 192,
-        alt: 'Dxmond Deelyn Portfolio',
+        alt: 'Dxmond Deelyn | Me',
       },
     ],
   },
