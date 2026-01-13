@@ -23,7 +23,7 @@ const featureWork = [
         title: "Restaurant Website",
         description: "An elegant website for a fine dining restaurant with online reservation system.",
         roles: ["Web Design", "Frontend Development", "Menu Integration"],
-        image: "/images/feature-work/feature-img-4.jpg"
+        image: "/images/feature-work/3.webp"
     },
     {
         title: "Fitness Tracker",
