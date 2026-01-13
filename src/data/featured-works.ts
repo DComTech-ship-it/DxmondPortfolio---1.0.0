@@ -26,7 +26,7 @@ export const featuredWorks = [
   {
     id: 4,
     title: "Restaurant Website",
-    image: "/images/works/restaurant.jpg",
+    image: "/images/works/3.webp",
     roles: ["Web Design", "Frontend Development", "Menu Integration"],
     description: "An elegant website for a fine dining restaurant with online reservation system.",
     tags: ["HTML5", "CSS3", "JavaScript", "GSAP"]
