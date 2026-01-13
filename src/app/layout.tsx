@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: 'Dxmond Deelyn - Portfolio',
+    title: 'Dxmond Deelyn |Me',
     description: 'Social Engineer & Web Developer Portfolio',
     url: siteUrl,
     siteName: 'Dxmond Deelyn Portfolio',
@@ -65,12 +65,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Dxmond Deelyn - Portfolio',
+    title: 'Dxmond Deelyn|Me',
     description: 'Social Engineer & Web Developer Portfolio',
-    images: [`${siteUrl}/favicon/favicon.png`],
+    images: [`${siteUrl}/favicon/favicon-32x32.png`],
   },
   other: {
-    'og:image:secure_url': `${siteUrl}/favicon/favicon.png`,
+    'og:image:secure_url': `${siteUrl}/favicon/favicon-32x32.png`,
     'og:image:type': 'image/png',
     'og:image:width': '192',
     'og:image:height': '192',
