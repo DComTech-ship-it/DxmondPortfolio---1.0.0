@@ -9,11 +9,13 @@ import Quote from "./components/home/quote"
 import Skills from "./components/home/skills"
 import ContactForm from "./components/home/contact"
 import LiveLocation from "./components/home/live-location"
+import TypingBlog from "./components/home/typing-blog"
 
 const page = () => {
   return (
     <main>
       <HeroSection/>
+      <TypingBlog />
       <Divider/>
       <AboutMe/>
       <Divider/>
