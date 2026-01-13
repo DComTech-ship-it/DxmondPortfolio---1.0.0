@@ -10,7 +10,6 @@ import Skills from "./components/home/skills"
 import ContactForm from "./components/home/contact"
 import LiveLocation from "./components/home/live-location"
 import TypingBlog from "./components/home/typing-blog"
-import ForexSection from "./components/home/forex"
 
 const page = () => {
   return (
@@ -33,8 +32,6 @@ const page = () => {
       <Skills/>
       <Divider/>
       <ContactForm/>
-      <Divider/>
-      <ForexSection/>
       <Divider/>
       <LiveLocation/>
       <Divider/>
