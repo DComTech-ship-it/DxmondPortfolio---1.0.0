@@ -7,6 +7,8 @@ import HeroSection from "./components/home/hero-section"
 import ProjectOverview from "./components/home/project-overview"
 import Quote from "./components/home/quote"
 import Skills from "./components/home/skills"
+import ContactForm from "./components/home/contact"
+import LiveLocation from "./components/home/live-location"
 
 const page = () => {
   return (
@@ -26,6 +28,10 @@ const page = () => {
       <Quote/>
       <Divider/>
       <Skills/>
+      <Divider/>
+      <ContactForm/>
+      <Divider/>
+      <LiveLocation/>
       <Divider/>
     </main>
   )
