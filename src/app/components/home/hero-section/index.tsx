@@ -1,8 +1,13 @@
+"use client";
+
 import Image from "next/image"
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { useContact } from "@/app/context/contact-context";
+import ContactForm from "@/app/components/contact/contact-form";
 
 const HeroSection = () => {
+  const { isOpen, openModal, closeModal } = useContact();
     const socialIcon = [
         {
             img: "/images/icon/twitter-icon.svg",
@@ -51,27 +56,28 @@ const HeroSection = () => {
                                         )
                                     })}
                                 </div>
-                                <Button asChild className="h-auto rounded-full p-0.5!">
-                                    <Link
-                                        href="#"
-                                        className="inline-block p-0.5 rounded-full bg-[linear-gradient(96.09deg,_#9282F8_12.17%,_#F3CA4D_90.71%)]"
-                                    >
-                                        <span className="flex items-center gap-3 bg-primary hover:bg-[linear-gradient(96.09deg,_#9282F8_12.17%,_#F3CA4D_90.71%)] py-2.5 px-5 rounded-full">
-                                            <Image
-                                                src="/images/icon/spark-icon.svg"
-                                                alt="spark-icon"
-                                                width={14}
-                                                height={14}
-                                            />
-                                            <span className="text-sm sm:text-base font-semibold text-white">Get in touch</span>
-                                        </span>
-                                    </Link>
-                                </Button>
+                                <Button 
+          className="h-auto rounded-full p-0.5!"
+          onClick={() => openModal()}
+        >
+          <span className="inline-block p-0.5 rounded-full bg-[linear-gradient(96.09deg,_#9282F8_12.17%,_#F3CA4D_90.71%)]">
+            <span className="flex items-center gap-3 bg-primary hover:bg-[linear-gradient(96.09deg,_#9282F8_12.17%,_#F3CA4D_90.71%)] py-2.5 px-5 rounded-full cursor-pointer">
+              <Image
+                src="/images/icon/spark-icon.svg"
+                alt="spark-icon"
+                width={14}
+                height={14}
+              />
+              <span className="text-sm sm:text-base font-semibold text-white">Get in touch</span>
+            </span>
+          </span>
+        </Button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            {isOpen && <ContactForm onClose={closeModal} />}
         </section>
     )
 }
