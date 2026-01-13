@@ -10,24 +10,24 @@ const HeroSection = () => {
   const { isOpen, openModal, closeModal } = useContact();
     const socialIcon = [
         {
-            img: "/images/icon/twitter-icon.svg",
-            href: "#!",
-            icon: "Twitter"
+            img: "/images/icon/whatsapp-icon.svg",
+            href: "https://wa.me/yourwhatsappnumber",
+            icon: "WhatsApp"
         },
         {
-            img: "/images/icon/behance-icon.svg",
-            href: "#!",
-            icon: "Behance"
+            img: "/images/icon/linkedin-icon.svg",
+            href: "https://linkedin.com/in/yourusername",
+            icon: "LinkedIn"
         },
         {
-            img: "/images/icon/dribble-icon.svg",
-            href: "#!",
-            icon: "Dribble"
+            img: "/images/icon/instagram-icon.svg",
+            href: "https://instagram.com/yourusername",
+            icon: "Instagram"
         },
         {
-            img: "/images/icon/dribble-icon.svg",
-            href: "#!",
-            icon: "Dribble"
+            img: "/images/icon/github-icon.svg",
+            href: "https://github.com/yourusername",
+            icon: "GitHub"
         },
     ];
     return (
