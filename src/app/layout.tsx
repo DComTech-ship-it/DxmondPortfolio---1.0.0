@@ -4,6 +4,23 @@ import "./globals.css";
 import Header from "./components/layout/header";
 import Footer from "./components/layout/footer";
 import ClientLayout from "./client-layout";
+import Script from 'next/script';
+
+// JSON-LD data for structured data
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Dxmond Deelyn',
+  jobTitle: 'Social Engineer & Web Developer',
+  url: 'https://dxmond-portfolio.vercel.app',
+  sameAs: [
+    // Add your social profiles here, for example:
+    // 'https://linkedin.com/in/yourprofile',
+    // 'https://github.com/yourusername',
+  ],
+  image: 'https://dxmond-portfolio.vercel.app/favicon/android-chrome-512x512.png',
+  description: 'Professional portfolio of Dxmond Deelyn, showcasing skills in social engineering and web development.'
+};
 
 const inter = Inter({
   variable: "--font-inter-sans",
@@ -85,6 +102,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          id="json-ld"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={inter.variable}>
         <ClientLayout>
           <Header />
