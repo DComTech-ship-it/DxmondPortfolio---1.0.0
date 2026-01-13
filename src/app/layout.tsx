@@ -56,24 +56,24 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: `${siteUrl}/favicon/android-chrome-512x512.png`,
-        width: 512,
-        height: 512,
+        url: `${siteUrl}/favicon/favicon.png`,
+        width: 192,
+        height: 192,
         alt: 'Dxmond Deelyn Portfolio',
       },
     ],
   },
   twitter: {
-    card: 'summary_large_image',
+    card: 'summary',
     title: 'Dxmond Deelyn - Portfolio',
     description: 'Social Engineer & Web Developer Portfolio',
-    images: [`${siteUrl}/favicon/android-chrome-512x512.png`],
+    images: [`${siteUrl}/favicon/favicon.png`],
   },
   other: {
-    'og:image:secure_url': `${siteUrl}/favicon/android-chrome-512x512.png`,
+    'og:image:secure_url': `${siteUrl}/favicon/favicon.png`,
     'og:image:type': 'image/png',
-    'og:image:width': '512',
-    'og:image:height': '512',
+    'og:image:width': '192',
+    'og:image:height': '192',
     'og:image:alt': 'Dxmond Deelyn Portfolio',
   },
 };
