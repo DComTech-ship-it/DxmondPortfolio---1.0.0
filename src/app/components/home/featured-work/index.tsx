@@ -30,9 +30,9 @@ const FeaturedWork = () => {
                         <div className="flex flex-col xs:flex-row gap-5 items-center justify-between">
                             <p className="text-sm tracking-[2px] text-primary uppercase font-medium">Featured work</p>
                             <Button asChild variant={"outline"} className="h-auto">
-                                <Link href={"/public/TECKU DESMOND-CV.pdf"} className="py-3 px-5">
+                                <a href={"/TECKU DESMOND-CV.pdf"} download className="py-3 px-5">
                                     Download Portfolio
-                                </Link>
+                                </a>
                             </Button>
                         </div>
                     </div>
