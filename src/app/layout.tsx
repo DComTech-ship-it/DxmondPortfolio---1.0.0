@@ -18,29 +18,29 @@ export const metadata: Metadata = {
   description: 'Dxmond Deelyn - Social Engineer & Web Developer Portfolio',
   icons: {
     icon: [
-      { url: '/favicon_io (1)/favicon.ico' },
-      { url: '/favicon_io (1)/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon_io (1)/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon/favicon.ico' },
+      { url: '/favicon/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
     ],
     apple: [
-      { url: '/favicon_io (1)/apple-touch-icon.png' },
+      { url: '/favicon/apple-touch-icon.png' },
     ],
     other: [
       {
         rel: 'icon',
-        url: '/favicon_io (1)/favicon-16x16.png',
+        url: '/favicon/favicon-16x16.png',
         sizes: '16x16',
         type: 'image/png',
       },
       {
         rel: 'icon',
-        url: '/favicon_io (1)/favicon-32x32.png',
+        url: '/favicon/favicon-32x32.png',
         sizes: '32x32',
         type: 'image/png',
       },
       {
         rel: 'apple-touch-icon',
-        url: '/favicon_io (1)/apple-touch-icon.png',
+        url: '/favicon/apple-touch-icon.png',
       },
       {
         rel: 'manifest',
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: `${siteUrl}/favicon_io (1)/favicon.png`,
+        url: `${siteUrl}/favicon/favicon.png`,
         width: 192,
         height: 192,
         alt: 'Dxmond Deelyn Portfolio',
@@ -67,10 +67,10 @@ export const metadata: Metadata = {
     card: 'summary',
     title: 'Dxmond Deelyn - Portfolio',
     description: 'Social Engineer & Web Developer Portfolio',
-    images: [`${siteUrl}/favicon_io (1)/favicon.png`],
+    images: [`${siteUrl}/favicon/favicon.png`],
   },
   other: {
-    'og:image:secure_url': `${siteUrl}/favicon_io (1)/favicon.png`,
+    'og:image:secure_url': `${siteUrl}/favicon/favicon.png`,
     'og:image:type': 'image/png',
     'og:image:width': '192',
     'og:image:height': '192',
