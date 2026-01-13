@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     'og:image:type': 'image/png',
     'og:image:width': '192',
     'og:image:height': '192',
-    'og:image:alt': 'Dxmond Deelyn Portfolio',
+    'og:image:alt': 'Dxmond Deelyn | Me',
   },
 };
 
