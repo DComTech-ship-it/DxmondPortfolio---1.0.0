@@ -11,7 +11,7 @@ const BuyMeCoffee = () => {
       className="group flex items-center gap-2 bg-amber-100 hover:bg-amber-200 text-amber-800 border-amber-200 hover:border-amber-300 transition-colors"
     >
       <a 
-        href="https://www.buymeacoffee.com/YOUR-USERNAME" 
+        href="https://www.buymeacoffee.com/dxmond" 
         target="_blank" 
         rel="noopener noreferrer"
         className="flex items-center"
