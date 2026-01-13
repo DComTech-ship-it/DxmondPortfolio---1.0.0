@@ -28,7 +28,7 @@ const HeroSection = () => {
             img: "/images/icon/dribble-icon.svg",
             href: "#!",
             icon: "Dribble"
-        }
+        },
     ];
     return (
         <section>
