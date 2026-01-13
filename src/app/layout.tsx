@@ -9,39 +9,46 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+import type { Metadata } from 'next';
+
+const siteUrl = 'https://dxmond-portfolio.vercel.app';
+
 export const metadata: Metadata = {
-  title: "Dxmond Deelyn Portfolio",
-  description: "Dxmond Deelyn - Social Engineer & Web Developer Portfolio",
+  metadataBase: new URL(siteUrl),
+
+  title: 'Dxmond Deelyn Portfolio',
+  description: 'Dxmond Deelyn - Social Engineer & Web Developer Portfolio',
+
   icons: {
     icon: [
       { url: '/favicon.png', sizes: 'any' },
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
       { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
     ],
-    apple: [
-      { url: '/apple-touch-icon.png' },
-    ],
+    apple: [{ url: '/apple-touch-icon.png' }],
   },
+
   openGraph: {
     title: 'Dxmond Deelyn - Portfolio',
     description: 'Social Engineer & Web Developer Portfolio',
-    url: 'https://dxmond-portfolio.vercel.app',
+    url: siteUrl,
     siteName: 'Dxmond Deelyn Portfolio',
+    type: 'website',
     images: [
       {
-        url: '/og-image.png', // Consider creating an og-image.jpg in public folder
+        url: '/og-image.png',
         width: 1200,
         height: 630,
+        alt: 'Dxmond Deelyn Portfolio Preview',
       },
     ],
-    locale: 'en_US',
-    type: 'website',
   },
+
   twitter: {
     card: 'summary_large_image',
     title: 'Dxmond Deelyn - Portfolio',
     description: 'Social Engineer & Web Developer Portfolio',
-    images: ['/og-image.png'], // Same as OpenGraph image
+    images: ['/og-image.png'],
   },
 };
 
