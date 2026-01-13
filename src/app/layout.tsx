@@ -1,15 +1,17 @@
-import type { Metadata } from "next";
+"use client";
+
+import type { Metadata } from 'next';
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/layout/header";
 import Footer from "./components/layout/footer";
+import { Toaster } from "sonner";
+import { ContactProvider } from "./context/contact-context";
 
 const inter = Inter({
   variable: "--font-inter-sans",
   subsets: ["latin"],
 });
-
-import type { Metadata } from 'next';
 
 const siteUrl = 'https://dxmond-portfolio.vercel.app';
 
@@ -55,11 +57,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
-        <Header/>
-        {children}
-        <Footer/>
+    <html lang="en">
+      <body className={inter.variable}>
+        <ContactProvider>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+          <Toaster position="top-center" richColors />
+        </ContactProvider>
       </body>
     </html>
   );
