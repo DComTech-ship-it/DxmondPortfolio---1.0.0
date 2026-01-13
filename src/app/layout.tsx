@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     siteName: 'Dxmond Deelyn Portfolio',
     images: [
       {
-        url: '/og-image.jpg', // Consider creating an og-image.jpg in public folder
+        url: '/og-image.png', // Consider creating an og-image.jpg in public folder
         width: 1200,
         height: 630,
       },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Dxmond Deelyn - Portfolio',
     description: 'Social Engineer & Web Developer Portfolio',
-    images: ['/og-image.jpg'], // Same as OpenGraph image
+    images: ['/og-image.png'], // Same as OpenGraph image
   },
 };
 
