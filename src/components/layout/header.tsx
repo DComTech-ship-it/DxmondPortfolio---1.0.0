@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
 
 export function Header() {
   return (
@@ -22,18 +21,7 @@ export function Header() {
             >
               Forex
             </Link>
-            <Link
-              href="/chat"
-              className="text-sm font-medium text-foreground transition-colors hover:text-primary"
-            >
-              AI Chat
-            </Link>
           </nav>
-        </div>
-        <div className="flex items-center gap-4">
-          <Link href="/chat">
-            <Button size="sm">Try AI Assistant</Button>
-          </Link>
         </div>
       </div>
     </header>
