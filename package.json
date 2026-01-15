@@ -9,14 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "1.2.4",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "embla-carousel-react": "8.6.0",
+    "framer-motion": "10.16.4",
+    "lucide-react": "0.294.0",
     "next": "14.0.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "lucide-react": "0.294.0",
-    "embla-carousel-react": "8.6.0",
-    "@radix-ui/react-slot": "1.2.4",
-    "framer-motion": "10.16.4",
-    "sonner": "1.4.2"
+    "sonner": "1.4.2",
+    "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
     "@types/node": "20.10.6",
