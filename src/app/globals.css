@@ -25,4 +25,3 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
-'@ | Out-File -FilePath src/app/globals.css -Encoding utf8
