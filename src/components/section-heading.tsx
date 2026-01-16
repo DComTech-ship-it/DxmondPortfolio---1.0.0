@@ -1,20 +1,13 @@
-import React from 'react';
+﻿interface SectionHeadingProps {
+  title: string
+  description?: string
+}
 
-type SectionHeadingProps = {
-  title: string;
-  description?: string;
-  className?: string;
-};
-
-export function SectionHeading({ title, description, className = '' }: SectionHeadingProps) {
+export function SectionHeading({ title, description }: SectionHeadingProps) {
   return (
-    <div className={`text-center max-w-3xl mx-auto ${className}`}>
-      <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">{title}</h2>
-      {description && (
-        <p className="mt-4 text-lg text-muted-foreground">
-          {description}
-        </p>
-      )}
+    <div className="space-y-2">
+      <h2 className="text-3xl font-bold tracking-tight">{title}</h2>
+      {description && <p className="text-muted-foreground">{description}</p>}
     </div>
-  );
+  )
 }

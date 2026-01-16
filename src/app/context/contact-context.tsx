@@ -1,32 +1,32 @@
-'use client';
+﻿"use client"
 
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, ReactNode } from "react"
 
 interface ContactContextType {
-  isOpen: boolean;
-  openModal: () => void;
-  closeModal: () => void;
+  isOpen: boolean
+  onOpen: () => void
+  onClose: () => void
 }
 
-const ContactContext = createContext<ContactContextType | undefined>(undefined);
+const ContactContext = createContext<ContactContextType | undefined>(undefined)
 
-export function ContactProvider({ children }: { children: React.ReactNode }) {
-  const [isOpen, setIsOpen] = useState(false);
+export function ContactProvider({ children }: { children: ReactNode }) {
+  const [isOpen, setIsOpen] = useState(false)
 
-  const openModal = () => setIsOpen(true);
-  const closeModal = () => setIsOpen(false);
+  const onOpen = () => setIsOpen(true)
+  const onClose = () => setIsOpen(false)
 
   return (
-    <ContactContext.Provider value={{ isOpen, openModal, closeModal }}>
+    <ContactContext.Provider value={{ isOpen, onOpen, onClose }}>
       {children}
     </ContactContext.Provider>
-  );
+  )
 }
 
 export function useContact() {
-  const context = useContext(ContactContext);
+  const context = useContext(ContactContext)
   if (context === undefined) {
-    throw new Error('useContact must be used within a ContactProvider');
+    throw new Error("useContact must be used within a ContactProvider")
   }
-  return context;
+  return context
 }
